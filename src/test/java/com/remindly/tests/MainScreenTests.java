@@ -11,4 +11,10 @@ public class MainScreenTests extends TestBase {
         Assert.assertTrue(app.getMainScreen().isNoReminderTextPresent());
     }
 
+    @Test
+    public void OpenLicencesWindow(){
+        app.getReminder().tapOnHamburger();
+        app.getReminder().tapOnLicenses();
+        Assert.assertTrue(app.getMainScreen().isReminderLicencesTextPresent().contains("NOTICES FOR LIBRARIES"));
+    }
 }

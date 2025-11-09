@@ -32,4 +32,23 @@ public class MainScreenHelper extends BaseHelper {
     public String isReminderLicencesTextPresent() {
         return isTextPresent(By.id("com.blanyal.remindly:id/licenses_text_view"));
     }
+
+    public String isReminderDateTimePresent() {
+        return isTextPresent(By.id("recycle_date_time"));
+    }
+
+    public String isRepeatInfoPresent() {
+        return isTextPresent(By.id("recycle_repeat_info"));
+    }
+
+    public void deleteReminder() {
+        pause(500);
+
+        longPressWithCoordinates(By.id("recycle_title"));
+        tap(By.id("discard_reminder"));
+    }
+
+    public boolean isReminderTitlePresent(String title) {
+        return isElementPresent(By.xpath("//*[@text='" + title + "']"));
+    }
 }
