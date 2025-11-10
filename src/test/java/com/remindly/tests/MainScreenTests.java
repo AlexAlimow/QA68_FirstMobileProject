@@ -12,7 +12,7 @@ public class MainScreenTests extends TestBase {
     }
 
     @Test
-    public void OpenLicencesWindow(){
+    public void openLicencesWindow(){
         app.getReminder().tapOnHamburger();
         app.getReminder().tapOnLicenses();
         Assert.assertTrue(app.getMainScreen().isReminderLicencesTextPresent().contains("NOTICES FOR LIBRARIES"));
