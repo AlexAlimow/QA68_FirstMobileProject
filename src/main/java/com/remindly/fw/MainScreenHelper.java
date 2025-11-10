@@ -4,8 +4,6 @@ import com.remindly.core.BaseHelper;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
 
-import java.nio.charset.Charset;
-
 public class MainScreenHelper extends BaseHelper {
 
     public MainScreenHelper(AppiumDriver driver) {

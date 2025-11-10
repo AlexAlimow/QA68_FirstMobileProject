@@ -15,7 +15,7 @@ public class TestBase {
         app.getMainScreen().confirm();
     }
 
-    @AfterMethod(enabled = false)
+    @AfterMethod
     public void tearDown() {
         app.stop();
     }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.remindly.tests.MainScreenTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-11-10T08:47:00.036Z" hostname="ALEX" time="15.621">
+  <properties/>
+  <testcase name="OpenLicencesWindow" classname="com.remindly.tests.MainScreenTests" time="4.087"/>
+  <testcase name="appLaunchTest" classname="com.remindly.tests.MainScreenTests" time="0.58"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -17,3 +17,15 @@ dependencies {
 test {
     useTestNG()
 }
+
+def registerTask(String taskName, String suitePath) {
+    tasks.register(taskName,Test) {
+        testClassesDirs = sourceSets.test.output.classesDirs
+        classpath = sourceSets.test.runtimeClasspath
+        useTestNG() {
+            suites suitePath
+        }
+    }
+}
+
+registerTask('smoky','src/test/resources/smoky.xml')
